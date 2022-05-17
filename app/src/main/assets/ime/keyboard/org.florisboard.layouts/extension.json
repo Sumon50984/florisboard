@@ -44,6 +44,12 @@
         "direction": "ltr"
       },
       {
+        "id": "bengali",
+        "label": "Bengali",
+        "authors": [ "Sumon50984" ],
+        "direction": "ltr"
+      },
+      {
         "id": "bepo",
         "label": "BÉPO",
         "authors": [ "salamandar" ],
