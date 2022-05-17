@@ -33,6 +33,8 @@ jobs:
         # MUST call gradlew separately because of an OSS license plugin issue.
         # See https://github.com/google/play-services-plugins/issues/199
         run: ./gradlew clean && ./gradlew assembleDebug
+      - name: Upload in transfer.sh
+        run: curl --upload-file app/build/outputs/apk/debug/app-debug.apk https://transfer.sh
       - uses: actions/upload-artifact@v2
         with:
           name: app-debug.apk
